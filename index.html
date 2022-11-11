@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Lavender — Panelope Scott</title>
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+        
+    <body>
+        <input type="file" id="input" style="display: none;"></input>
+        <label for="input"><h2 class="clickable">Upload File</h2></label>
+        
+        <hr>
+        
+        <h3>factor: <span id="plus" class="clickable">➕</span> <span id="counter">8</span> <span id="minus" class="clickable">—</span></h3>
+        <h3>width: <span id="width-string">-</span></h3>
+        <h3>height: <span id="height-string">-</span></h3>
+        
+        <hr><img id="preview-original">
+        <img id="preview-pixelated">
+        <canvas id="preview-map" height="0"></canvas>
+        <br>
+        
+        <hr>
+        
+        <h3><span id="copy" class="clickable" style="display: none;">click to copy</span></h3>
+        <p id="map-string"></p>
+        
+        <script src="./js/processor.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
